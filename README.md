@@ -176,3 +176,26 @@ java -jar target/<name_project>-0.0.1-SNAPSHOT.jar
 Откройте приложение в браузере по адресу http://localhost:8080.
 
 Перейдите в /swagger, чтобы увидеть документацию API.
+
+
+**Реализация**
+
+![login](https://github.com/user-attachments/assets/529c6bda-c034-495e-ad3d-84f2e6c75d46)
+
+
+![product_list](https://github.com/user-attachments/assets/ef513768-48a1-4f79-96ab-7227b22126ea)
+
+
+![add_product](https://github.com/user-attachments/assets/230267ca-4454-4398-863b-17a700097691)
+
+
+![edit_product](https://github.com/user-attachments/assets/523916a0-ae5c-411b-9484-d2f87f514f77)
+
+
+![category](https://github.com/user-attachments/assets/d93dcd90-d629-482c-b839-2168a65f68c8)
+
+
+![swagger](https://github.com/user-attachments/assets/0094c555-44f3-45be-8ec3-12162f90e38a)
+
+![swagger-catalog](https://github.com/user-attachments/assets/6bfdbc5a-ee86-4870-87d3-a69e3e067ec9)
+
