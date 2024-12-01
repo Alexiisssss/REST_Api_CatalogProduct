@@ -1,0 +1,24 @@
+<form th:action="@{/products/edit/{id}(id=${product.id})}" method="post">
+    <label>
+        Name
+        <input type="text" name="name" placeholder="Name" th:value="${product.name}" required />
+    </label>
+    <label>
+        Description
+        <textarea name="description" placeholder="Description" th:text="${product.description}"></textarea>
+    </label>
+    <label>
+        Price
+        <input type="number" name="price" placeholder="Price" th:value="${product.price}" required />
+    </label>
+    <label>
+        Category
+        <select name="categoryId" required>
+            <option th:each="category : ${categories}"
+                    th:value="${category.id}"
+                    th:text="${category.name}"
+                    th:selected="${category.id == product.category.id}">Category</option>
+        </select>
+    </label>
+    <button type="submit">Save</button>
+</form>

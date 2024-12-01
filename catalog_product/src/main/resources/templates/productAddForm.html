@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить новый товар</title>
+    <link rel="stylesheet" th:href="@{/css/productAdd.css}">
+</head>
+<body>
+<div class="form-container">
+    <h1>Добавить новый товар</h1>
+    <form action="/products/new" method="post">
+        <label for="name">
+            Название
+            <input type="text" id="name" name="name" placeholder="Название товара" required/>
+        </label>
+
+        <label for="description">
+            Описание
+            <textarea id="description" name="description" placeholder="Описание товара"></textarea>
+        </label>
+
+        <label for="price">
+            Цена
+            <input type="number" id="price" name="price" placeholder="Цена товара" required/>
+        </label>
+
+        <label for="categoryId">
+            Категория
+            <select id="categoryId" name="categoryId" required>
+                <option th:each="category : ${categories}"
+                        th:value="${category.id}"
+                        th:text="${category.name}">Выберите категорию
+                </option>
+            </select>
+        </label>
+
+        <div class="button-container">
+            <button type="submit" class="btn-submit">Добавить товар</button>
+            <a href="/product-list" class="btn-back">Назад к списку</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
